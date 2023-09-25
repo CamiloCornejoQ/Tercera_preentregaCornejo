@@ -1,0 +1,12 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidoquecambiar %}
+<h1>Lista de Productos</h1>
+<ul>
+    {% for producto in productos %}
+        <li>{{ producto.nombre }} - {{ producto.precio }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

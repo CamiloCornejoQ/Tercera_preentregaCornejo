@@ -1,0 +1,55 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidoquecambiar %}
+
+<title>Búsqueda</title>
+
+<h1>Búsqueda</h1>
+    
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <button type="submit">Buscar</button>
+</form>
+<br></br>
+
+<h2>Resultados:</h2>
+<br></br>
+<!-- Resultados de Clientes -->
+<h3>Clientes:</h3>
+<br></br>
+<ul>
+    {% for cliente in resultados_clientes %}
+        <li>{{ cliente.nombre }}</li>
+    {% empty %}
+        <p>No se encontraron clientes.</p>
+    {% endfor %}
+</ul>
+
+<!-- Resultados de Productos -->
+<h3>Productos:</h3>
+<br></br>
+<ul>
+    {% for producto in resultados_productos %}
+        <li>{{ producto.nombre }}</li>
+    {% empty %}
+        <p>No se encontraron productos.</p>
+    {% endfor %}
+</ul>
+
+<!-- Resultados de Compras -->
+<h3>Compras:</h3>
+<br></br>
+<ul>
+    {% for compra in resultados_compras %}
+        <li>Compra de {{ compra.cantidad }} {{ compra.producto.nombre }} por {{ compra.cliente.nombre }}</li>
+    {% empty %}
+        <p>No se encontraron compras.</p>
+    {% endfor %}
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/

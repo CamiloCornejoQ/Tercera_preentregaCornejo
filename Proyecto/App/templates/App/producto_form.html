@@ -1,0 +1,15 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidoquecambiar %}
+
+    <div class="container">
+        <h1>Crear un nuevo producto</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+{% endblock %}

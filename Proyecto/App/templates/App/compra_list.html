@@ -1,0 +1,13 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidoquecambiar %}
+
+<h1>Lista de Compras</h1>
+<ul>
+    {% for compra in compras %}
+        <li>{{ compra.cliente.nombre }} compró {{ compra.cantidad }} de {{ compra.producto.nombre }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
