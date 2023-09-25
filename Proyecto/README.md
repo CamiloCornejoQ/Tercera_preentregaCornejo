@@ -15,26 +15,26 @@ El proyecto incluye las siguientes funcionalidades:
 
 Para crear un cliente :
 
-    Accede a la página de creación de compras en http://127.0.0.1:8000/Aplicacion/clientes/crear/.
+    Accede a la página de creación de compras en http://127.0.0.1:8000/App/clientes/crear/.
     Completa el formulario con los detalles del cliente y haz clic en "GUARDAR".
-    Accede a la página de muestra de compras en http://127.0.0.1:8000/Aplicacion/Clientes
+    Accede a la página de muestra de compras en http://127.0.0.1:8000/App/Clientes
 
 Para crear productos
 
-    Accede a la página de creación de productos en http://127.0.0.1:8000/Aplicacion/productocreate/
+    Accede a la página de creación de productos en http://127.0.0.1:8000/App/productocreate/
     Completa el formulario con los detalles del Productos y haz clic en "GUARDAR".
-    Accede a la página de muestra de productos en http://127.0.0.1:8000/Aplicacion/Productos
+    Accede a la página de muestra de productos en http://127.0.0.1:8000/App/Productos
 
 Para crear Compras
 
-    Accede a la página de creación de compras en http://127.0.0.1:8000/Aplicacion/compracreate
+    Accede a la página de creación de compras en http://127.0.0.1:8000/App/compracreate
     Esta pagina ya tiene los productos y clientes creados anteriormente.
     Completa el formulario con los detalles de la compa y selecciona la cantidad y haz clic en "GUARDAR".
-    Accede a la página de muestra de compras en http://127.0.0.1:8000/Aplicacion/compras
+    Accede a la página de muestra de compras en http://127.0.0.1:8000/App/compras
 
 Búsqueda
 
-    Accede a la página de búsqueda en http://127.0.0.1:8000/Aplicacion/buscar/
+    Accede a la página de búsqueda en http://127.0.0.1:8000/App/buscar/
     Ingresa un término de búsqueda y haz clic en "Buscar".
     Verás los resultados de la búsqueda.
 
